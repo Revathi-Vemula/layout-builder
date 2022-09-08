@@ -29,8 +29,8 @@ const ConfigurationController = () => (
         <div>
           <div className="layout-controls-container">
             <h1 className="layout-heading">Layout</h1>
-            <ul className="checkboxes-container">
-              <li className="checkbox-container">
+            <div className="checkboxes-container">
+              <div className="checkbox-container">
                 <input
                   type="checkbox"
                   id="content"
@@ -40,30 +40,30 @@ const ConfigurationController = () => (
                 <label htmlFor="content" className="label-name">
                   Content
                 </label>
-              </li>
-              <li className="checkbox-container">
+              </div>
+              <div className="checkbox-container">
                 <input
                   type="checkbox"
                   id="leftNavBar"
                   checked={showLeftNavBar}
                   onChange={onChangeLeftNavbar}
                 />
-                <label htmlFor="leftNavBar" className="label-name">
+                <label htmlFor="leftNavbar" className="label-name">
                   Left Navbar
                 </label>
-              </li>
-              <li className="checkbox-container">
+              </div>
+              <div className="checkbox-container">
                 <input
                   type="checkbox"
                   id="rightNavBar"
                   checked={showRightNavBar}
                   onChange={onChangeRightNavbar}
                 />
-                <label htmlFor="content" className="label-name">
+                <label htmlFor="rightNavBar" className="label-name">
                   Right Navbar
                 </label>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       )

@@ -4,11 +4,11 @@ import './index.css'
 const Body = () => (
   <ConfigurationContext.Consumer>
     {value => {
-      const {showContent, showLeftNavbar, showRightNavbar} = value
+      const {showContent, showLeftNavBar, showRightNavBar} = value
 
       return (
-        <div>
-          {showLeftNavbar ? (
+        <div className="body-container">
+          {showLeftNavBar ? (
             <div className="left-navbar">
               <h1 className="body-header-text">Left Navbar Menu</h1>
               <ul className="list-items">
@@ -29,7 +29,7 @@ const Body = () => (
               </p>
             </div>
           ) : null}
-          {showRightNavbar ? (
+          {showRightNavBar ? (
             <div className="right-navbar">
               <h1 className="body-header-text">Right Navbar</h1>
               <div className="ad-box-container">
@@ -43,3 +43,5 @@ const Body = () => (
     }}
   </ConfigurationContext.Consumer>
 )
+
+export default Body
