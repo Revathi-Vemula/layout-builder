@@ -6,8 +6,8 @@ const ConfigurationController = () => (
     {value => {
       const {
         showContent,
-        showLeftNavBar,
-        showRightNavBar,
+        showLeftNavbar,
+        showRightNavbar,
         onToggleShowContent,
         onToggleShowLeftNavbar,
         onToggleShowRightNavbar,
@@ -44,8 +44,8 @@ const ConfigurationController = () => (
               <div className="checkbox-container">
                 <input
                   type="checkbox"
-                  id="leftNavBar"
-                  checked={showLeftNavBar}
+                  id="leftNavbar"
+                  checked={showLeftNavbar}
                   onChange={onChangeLeftNavbar}
                 />
                 <label htmlFor="leftNavbar" className="label-name">
@@ -55,11 +55,11 @@ const ConfigurationController = () => (
               <div className="checkbox-container">
                 <input
                   type="checkbox"
-                  id="rightNavBar"
-                  checked={showRightNavBar}
+                  id="rightNavbar"
+                  checked={showRightNavbar}
                   onChange={onChangeRightNavbar}
                 />
-                <label htmlFor="rightNavBar" className="label-name">
+                <label htmlFor="rightNavbar" className="label-name">
                   Right Navbar
                 </label>
               </div>

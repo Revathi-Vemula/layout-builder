@@ -7,7 +7,7 @@ import Layout from './components/Layout'
 import './App.css'
 
 class App extends Component {
-  state = {showLeftNavBar: true, showContent: true, showRightNavBar: true}
+  state = {showLeftNavbar: true, showContent: true, showRightNavbar: true}
 
   onToggleShowContent = () => {
     this.setState(prevState => ({
@@ -16,22 +16,22 @@ class App extends Component {
   }
 
   onToggleShowLeftNavbar = () => {
-    this.setState(prevState => ({showLeftNavBar: !prevState.showLeftNavBar}))
+    this.setState(prevState => ({showLeftNavbar: !prevState.showLeftNavbar}))
   }
 
   onToggleShowRightNavbar = () => {
-    this.setState(prevState => ({showRightNavBar: !prevState.showRightNavBar}))
+    this.setState(prevState => ({showRightNavbar: !prevState.showRightNavbar}))
   }
 
   render() {
-    const {showContent, showLeftNavBar, showRightNavBar} = this.state
+    const {showContent, showLeftNavbar, showRightNavbar} = this.state
 
     return (
       <ConfigurationContext.Provider
         value={{
-          showLeftNavBar,
+          showLeftNavbar,
           showContent,
-          showRightNavBar,
+          showRightNavbar,
           onToggleShowContent: this.onToggleShowContent,
           onToggleShowLeftNavbar: this.onToggleShowLeftNavbar,
           onToggleShowRightNavbar: this.onToggleShowRightNavbar,
